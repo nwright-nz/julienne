@@ -50,7 +50,7 @@ func main() {
 	var output = flag.String("output", "apps_output.csv", "Specify a name for the exported CSV")
 	flag.Parse()
 	if *jsonPath == "" {
-		fmt.Println("USAGE: chef-json-parse -path path_to_json_file")
+		fmt.Println("USAGE: julienne -path path_to_json_file -output name_of_csv_file")
 		os.Exit(1)
 	}
 	jsonFile, err := os.Open(*jsonPath)
